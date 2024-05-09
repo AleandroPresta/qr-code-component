@@ -6,23 +6,44 @@
   }
   
 
-* {
+body, html {
     margin: 0px;
     padding: 0px;
     background-color: var(--light-gray);
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-component {
+    background-color: var(--white);
+    height: 600px;
+    width: 320px;
+    border-radius: 15px;
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.qr-wrapper {
-    flex-basis: 50%;
+img {
+    margin-top: 20px;
+    height: 290px;
+    width: 290px;
+    border-radius: 15px;
 }
 
 .text-wrapper {
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 290px;
 }
